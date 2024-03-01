@@ -4,7 +4,7 @@ body {
 
 main {
   width: 100%;
-  height: 900px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,216 +16,84 @@ main {
   grid-template-rows: repeat(12, 1fr);
   grid-gap: 15px;
   width: 85%;
-  height: 80%;
+  height: 90%;
   box-shadow: 4px 4px 12px #000000;
   padding: 15px;
 }
 
-.one {
-  grid-row: 1 / 4;
-  grid-column: 1 / 3;
-}
-
-.two {
-  grid-row: 1 / 7;
-  grid-column: 3 / 5;
-}
-
-.three {
-  grid-row: 1 / 3;
-  grid-column: 5 / 7;
-}
-
-.four {
-  grid-row: 4 / 7;
-  grid-column: 1 / 3;
-}
-
-.five {
-  grid-row: 3 / 5;
-  grid-column: 5 / 7;
-}
-
-.six {
-  grid-row: 5 / 7;
-  grid-column: 5 / 7;
-}
-
-.seven {
-  grid-row: 7 / 11;
-  grid-column: 1 / 3;
-}
-
-.eight {
-  grid-row: 7 / 9;
-  grid-column: 3 / 4;
-}
-.nine {
-  grid-row: 7 / 11;
-  grid-column: 4 / 6;
-}
-
-.ten {
-  grid-row: 7 / 11;
-  grid-column: 6 / 7;
-}
-
-.eleven {
-  grid-row: 9 / 11;
-  grid-column: 3 / 4;
-}
-
-.twelve {
-  grid-row: 11 / 13;
-  grid-column: 1 / 7;
-}
-
 .grid__element {
-  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .grid__element:hover .overlay {
   opacity: 0.5;
 }
 
-.firstbox {
-  position: absolute;
+.one {
+  grid-row: 1 / 4;
+  grid-column: 1 / 3;
   background-color: #007f5f;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-
-.secondbox {
-  position: absolute;
+.two {
+  grid-row: 1 / 7;
+  grid-column: 3 / 5;
   background-color: #80b918;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-
-.thirdbox {
-  position: absolute;
+.three {
+  grid-row: 1 / 3;
+  grid-column: 5 / 7;
   background-color: #dddf00;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-.forthbox {
-  position: absolute;
+.four {
+  grid-row: 4 / 7;
+  grid-column: 1 / 3;
   background-color: #2b9348;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-
-.fifthbox {
-  position: absolute;
+.five {
+  grid-row: 3 / 5;
+  grid-column: 5 / 7;
   background-color: #eeef20;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-.sixthbox {
-  position: absolute;
+.six {
+  grid-row: 5 / 7;
+  grid-column: 5 / 7;
   background-color: #ffff3f;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-.seventhbox {
-  position: absolute;
+.seven {
+  grid-row: 7 / 11;
+  grid-column: 1 / 3;
   background-color: #55a630;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-.eightbox {
-  position: absolute;
+.eight {
+  grid-row: 7 / 9;
+  grid-column: 3 / 4;
   background-color: #aacc00;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-
-.ninthbox {
-  position: absolute;
+.nine {
+  grid-row: 7 / 11;
+  grid-column: 4 / 6;
   background-color: #bfd200;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-.tenthbox {
-  position: absolute;
+.ten {
+  grid-row: 7 / 11;
+  grid-column: 6 / 7;
   background-color: #d4d700;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-.eleventhbox {
-  position: absolute;
+.eleven {
+  grid-row: 9 / 11;
+  grid-column: 3 / 4;
   background-color: #007f5f;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
-
-.twelvethbox {
-  position: absolute;
+.twelve {
+  grid-row: 11 / 13;
+  grid-column: 1 / 7;
   background-color: #9bc1bc;
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 64px;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
   justify-content: flex-start;
-  transition: all 0.5s ease-in-out;
 }
